@@ -8,20 +8,76 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .container {
+            background-color: #28a745;
+            /* Green background */
+            color: white;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            /* Semi-transparent white background for contrast */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 600px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        select,
+        input,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        select,
+        input {
+            background-color: #fff;
+            color: #000;
+        }
+
+        button {
+            background-color: #007bff;
+            /* Blue button */
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #videoContainer {
+            margin-top: 20px;
         }
 
         #video {
-            width: 80%;
-            border: 2px solid #000;
+            width: 100%;
+            border: 2px solid white;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -32,17 +88,16 @@
         <h1>FlexTally - Real-Time Workout Tracker</h1>
         <form id="workoutForm">
             <label for="exercise">Select Exercise:</label>
-
             <select id="exercise" name="exercise">
                 <option value="Push-Ups">Push-Ups</option>
                 <option value="Squats">Squats</option>
                 <option value="Jumping Jacks">Jumping Jacks</option>
             </select>
             <br><br>
-            < <label for="target_reps">Target Repetitions:</label>
-                <input type="number" id="target_reps" name="target_reps" required>
-                <br><br>
-                <button type="submit">Start Workout</button>
+            <label for="target_reps">Target Repetitions:</label>
+            <input type="number" id="target_reps" name="target_reps" required>
+            <br><br>
+            <button type="submit">Start Workout</button>
         </form>
 
         <div id="videoContainer">
