@@ -8,7 +8,7 @@
    
 <h2>Hosted Project Link</h2>
 
-[mention your project hosted project link here]
+[https://flex-tally-v1.vercel.app/]
 <h2>Project Description</h2>
 
 Flextally is an innovative fitness web app that leverages cutting-edge computer vision technology to provide real-time workout tracking, form feedback, and personalized goal setting, helping users stay motivated and achieve their fitness goals efficiently.
