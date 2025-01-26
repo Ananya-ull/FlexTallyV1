@@ -47,35 +47,35 @@ Development Tools
 <h2>Implementation</h2>
 
 <h2>For Software:</h2>
- Frontend Implementation
+ <h2>Frontend Implementation</h2>
 
     User Interface Design:
         Create responsive web pages using HTML, CSS, and JavaScript for key functionalities like login, signup, and workout tracking.
         Use frameworks like Tailwind CSS or Bootstrap to enhance the design and improve user experience.
         Implement real-time updates (e.g., repetition counts) using JavaScript.
-Backend Implementation
+<h2>Backend Implementation</h2>
 
     API Development:
         Develop RESTful APIs using Flask to handle user authentication, workout data storage, and goal tracking.
         Implement a secure login system with hashed passwords and session management.
- Computer Vision Integration
+ <h2>Computer Vision Integration</h2>
 
     Pose Detection:
         Use MediaPipe for real-time pose detection from the webcam feed.
         Process frames using OpenCV to extract key points for different exercises.
 
-Installation
+<h2>Installation</h2>
 
 pip install mediapipe
 pip install python-opencv
 pip install numpy
 pip install Flask
 
-Run
+<h2>Run</h2>
 
 python app.py
 
-Project Documentation
+<h2>Project Documentation</h2>
 
 For Software:
 Screenshots (Add at least 3)
@@ -94,11 +94,6 @@ This is a home page which is reached after login or signup
 Login Page![Screenshot 2025-01-26 093334](https://github.com/user-attachments/assets/46ae5463-dc11-4fbf-9651-6325631d0bcd)
 
 Sign Up Page![Screenshot 2025-01-26 093352](https://github.com/user-attachments/assets/c5b6115a-f711-4cbf-b54d-a12cbfaa5f78)
-
-Diagrams
-
-![Workflow](Add your workflow/architecture diagram here) Add caption explaining your workflow
-
 
 Video
 
