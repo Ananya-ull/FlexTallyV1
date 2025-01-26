@@ -21,10 +21,10 @@ In the fast-paced digital age, many individuals face challenges in maintaining c
 
 Flextally addresses these challenges by providing an intuitive web-based fitness tracking platform that utilizes computer vision technology to offer real-time workout recognition and feedback. Using OpenCV and Mediapipe for pose detection, the app can accurately track predefined exercises such as push-ups, squats, and jumping jacks without requiring additional equipment. The platform provides real-time repetition counts, form correction feedback, and goal tracking, ensuring a safe and effective fitness experience. By eliminating the need for wearables and leveraging a user-friendly interface accessible via webcam, Flextally empowers users to enhance their fitness journey conveniently from the comfort of their homes.
 
-Technical Details
+<h2>Technical Details</h2>
 Technologies/Components Used
 
-For Software:
+<h2>For Software:</h2>
 Frontend Technologies
 
     HTML, CSS, JavaScript: For creating a modern, responsive, and interactive user interface.
@@ -44,9 +44,9 @@ Development Tools
     Git and GitHub: For version control and collaboration.
 
 
-Implementation
+<h2>Implementation</h2>
 
-For Software:
+<h2>For Software:</h2>
  Frontend Implementation
 
     User Interface Design:
