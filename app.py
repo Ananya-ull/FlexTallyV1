@@ -24,7 +24,7 @@ def calculate_angle(a, b, c):
     angle = np.abs(radians * 180.0 / np.pi)
     return 360 - angle if angle > 180 else angle
 
-# Webcam feed generator
+@app.route('/c')
 def generate_frame():
     cap = cv2.VideoCapture(0)
 
@@ -92,9 +92,10 @@ def generate_frame():
                     (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
         # Stop when target is reached
+        
         if counts[exercise] >= target_reps:
             cv2.putText(frame, "Target Reached!", (10, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
-            break
+            return redirect(url_for('celebration'))
 
         # Convert frame to JPEG
         ret, jpeg = cv2.imencode('.jpg', frame)
@@ -106,6 +107,7 @@ def generate_frame():
                b'Content-Type: image/jpeg\r\n\r\n' + frame_data + b'\r\n\r\n')
 
     cap.release()
+   
 
 # Start workout
 @app.route('/start_workout', methods=["POST"])
@@ -122,7 +124,27 @@ def video_feed():
 
 # Main page
 @app.route('/')
+def signup():
+    return render_template("signup.html")
+
+@app.route('/login')
+def login():
+    return render_template("login.html")
+
+@app.route('/home')
+def home():
+    return render_template("home.html")
+
+@app.route('/index')
 def index():
+    return render_template("index.html")
+
+@app.route('/celebration')
+def celebration():
+    return render_template("celebration.html", counts=counts)
+
+@app.route('/count')
+def count():
     return render_template("index.html")
 
 if __name__ == '__main__':

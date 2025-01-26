@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Complete!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4caf50;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .celebration {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        @keyframes confetti {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            animation: confetti 3s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Congratulations! 🎉</h1>
+        <p class="celebration">You completed your target !</p>
+
+    </div>
+
+    <!-- Confetti animation -->
+    <script>
+        for (let i = 0; i < 100; i++) {
+            const confetti = document.createElement("div");
+            confetti.className = "confetti";
+            confetti.style.left = Math.random() * 100 + "vw";
+            confetti.style.animationDelay = Math.random() * 3 + "s";
+            confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+            document.body.appendChild(confetti);
+        }
+    </script>
+</body>
+
+</html>
