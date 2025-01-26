@@ -1,4 +1,4 @@
-##[Project Name] 🎯
+<h1>[Project Name] 🎯</h1>
 Basic Details
 Team Name: [Name]
 Team Members
