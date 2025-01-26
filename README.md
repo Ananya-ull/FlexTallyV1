@@ -95,6 +95,37 @@ Login Page![Screenshot 2025-01-26 093334](https://github.com/user-attachments/as
 
 Sign Up Page![Screenshot 2025-01-26 093352](https://github.com/user-attachments/assets/c5b6115a-f711-4cbf-b54d-a12cbfaa5f78)
 
+<h2>WorkFlow</h2>
+Start
+ |
+ v
+Landing Page (Signup/Login)
+ |
+ |                           
+ v                          
+Home Page                  
+ |                           
+ v                           
+Start Workout               
+ |
+ v
+Main Workout Page (Select Exercise & Set Target)
+ |
+ v
+Workout in Progress (Reps Tracked)
+ |
+ v
+Target Reached?
+ |----------------|
+ |                |
+No               Yes
+ |                |
+ |                v
+ |         Celebration Page
+ |             
+ v           
+Workout in progress
+
 Video
 
 https://drive.google.com/file/d/1D7pe7CWicyLhKun8lnrrWv2Eyxhjyyt4/view?usp=drivesdk
